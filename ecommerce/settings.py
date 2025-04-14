@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-81-9f&yt2^vh@^5mo&^%me!-mb8m@ricbir64qt9+-*txdx8qc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ecommerce-2-oqo2.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ecommerce-2-oqo2.onrender.com','ecommerce-3-on48.onrender.com' ,'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -117,11 +117,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # MEDIA_URL and MEDIA_ROOT are two different things:
 # MEDIA_URL: Defines the URL path that you use in your templates to reference media files.
