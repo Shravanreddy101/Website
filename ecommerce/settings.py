@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-81-9f&yt2^vh@^5mo&^%me!-mb8m@ricbir64qt9+-*txdx8qc"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['newecommerce-wsjt.onrender.com', 'localhost', '127.0.0.1']
 
@@ -118,6 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -131,9 +135,7 @@ STATICFILES_DIRS = [
 # MEDIA_ROOT: Defines the actual directory on the filesystem where the media files are stored.
 
 
-MEDIA_URL = '/images/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
