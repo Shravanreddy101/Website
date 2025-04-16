@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-81-9f&yt2^vh@^5mo&^%me!-mb8m@ricbir64qt9+-*txdx8qc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['newecommerce-wsjt.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['website-0f8p.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
